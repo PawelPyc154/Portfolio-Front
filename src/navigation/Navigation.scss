@@ -1,0 +1,41 @@
+@import '../variables';
+.Navigation {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    @include desktop {
+        background-color: $color-navigation;
+    }
+    &__list {
+        background-color: $color-navigation;
+        width: 80%;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        height: 80vh;
+        justify-content: space-evenly;
+        align-items: center;
+        @include desktop {
+            width: auto;
+            max-width: 1200px;
+            margin: 0 auto;
+            height: 10vh;
+            flex-direction: row;
+            justify-content: flex-end;
+        }
+    }
+    &__link {
+        color: white;
+        text-decoration: none;
+        font-size: 1.6em;
+        padding: 20px;
+    }
+    &__logo {
+        margin-right: auto;
+        font-size: 30px;
+        letter-spacing: 5px;
+    }
+    &__activeLink {
+        color: $color-activeLink;
+    }
+}
