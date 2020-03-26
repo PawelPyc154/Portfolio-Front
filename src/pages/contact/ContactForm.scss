@@ -1,0 +1,34 @@
+@import '../../variables';
+.Form {
+    display: flex;
+    flex-direction: column;
+    &__input {
+        background: $color-background;
+        height: 30px;
+        color: #ffffff;
+        margin: 0 0px 20px 0px;
+        font-size: 20px;
+        border: none;
+        border: 1px solid $color-activeLink;
+        padding: 2px;
+        font-size: 1.6em;
+        &:focus {
+            outline: none;
+        }
+    }
+    &__textarea {
+        flex-basis: 200px;
+        resize: none;
+    }
+    &__btn {
+        background: $color-background;
+        color: #ffffff;
+        font-size: 20px;
+        border: 1px solid $color-activeLink;
+    }
+    &__validation {
+        color: #e74c3c;
+        font-size: 1.2em;
+        margin: 0 0 5px 0;
+    }
+}
