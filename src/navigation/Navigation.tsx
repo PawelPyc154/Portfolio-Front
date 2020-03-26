@@ -37,8 +37,8 @@ const Navigation: React.SFC<NavigationProps> = () => {
       <motion.ul
         className="Navigation__list"
         variants={{
-          closed: { x: '-110%' },
-          open: { x: 0 },
+          closed: { x: '-110%', transition: { ease: 'linear' } },
+          open: { x: 0, transition: { ease: 'linear' } },
         }}
       >
         <motion.li
@@ -49,7 +49,7 @@ const Navigation: React.SFC<NavigationProps> = () => {
             desktop: { x: [-100, 0], opacity: [0, 1], transition: { delay: 0.4 } },
           }}
         >
-          <Link className="Navigation__link " to="/">
+          <Link className="Navigation__link " to="/" onClick={() => setOpen(false)}>
             <svg xmlns="http://www.w3.org/2000/svg" width="240.088" height="29.253" viewBox="0 0 240.088 29.253">
               <path
                 id="Path_1"
@@ -69,7 +69,13 @@ const Navigation: React.SFC<NavigationProps> = () => {
             desktop: { x: [-100, 0], opacity: [0, 1], transition: { delay: 0.3 } },
           }}
         >
-          <NavLink className="Navigation__link" activeClassName="Navigation__activeLink" to="/" exact>
+          <NavLink
+            className="Navigation__link"
+            activeClassName="Navigation__activeLink"
+            to="/"
+            exact
+            onClick={() => setOpen(false)}
+          >
             O mnie
           </NavLink>
         </motion.li>
@@ -81,7 +87,12 @@ const Navigation: React.SFC<NavigationProps> = () => {
             desktop: { x: [-100, 0], opacity: [0, 1], transition: { delay: 0.2 } },
           }}
         >
-          <NavLink className="Navigation__link" activeClassName="Navigation__activeLink" to="/project">
+          <NavLink
+            className="Navigation__link"
+            activeClassName="Navigation__activeLink"
+            to="/project"
+            onClick={() => setOpen(false)}
+          >
             Projekty
           </NavLink>
         </motion.li>
@@ -93,7 +104,12 @@ const Navigation: React.SFC<NavigationProps> = () => {
             desktop: { x: [-100, 0], opacity: [0, 1], transition: { delay: 0.1 } },
           }}
         >
-          <NavLink className="Navigation__link" to="/comments" activeClassName="Navigation__activeLink">
+          <NavLink
+            className="Navigation__link"
+            to="/comments"
+            activeClassName="Navigation__activeLink"
+            onClick={() => setOpen(false)}
+          >
             Komentarze
           </NavLink>
         </motion.li>
@@ -105,7 +121,12 @@ const Navigation: React.SFC<NavigationProps> = () => {
             desktop: { x: [-100, 0], opacity: [0, 1], transition: { delay: 0 } },
           }}
         >
-          <NavLink className="Navigation__link" to="/contact" activeClassName="Navigation__activeLink">
+          <NavLink
+            className="Navigation__link"
+            to="/contact"
+            activeClassName="Navigation__activeLink"
+            onClick={() => setOpen(false)}
+          >
             Kontakt
           </NavLink>
         </motion.li>
