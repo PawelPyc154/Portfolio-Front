@@ -2,6 +2,7 @@ import React from 'react';
 import { Formik, Form } from 'formik';
 import * as yup from 'yup';
 import './ContactForm.scss';
+import { motion } from 'framer-motion';
 
 export interface ContactFormProps {}
 
@@ -37,7 +38,7 @@ const ContactForm: React.SFC<ContactFormProps> = () => {
       {({ values, errors, touched, handleChange, handleBlur, isSubmitting, isValid }) => (
         <Form className="Form">
           {errors.email && touched.email && <div className="Form__validation">{errors.email}</div>}
-          <input
+          <motion.input
             style={errors.email && touched.email ? { border: '1px solid #e74c3c' } : {}}
             className="Form__input"
             type="email"
@@ -46,9 +47,10 @@ const ContactForm: React.SFC<ContactFormProps> = () => {
             onBlur={handleBlur}
             value={values.email}
             placeholder="Email"
+            animate={{ x: [100, 0], opacity: [0, 1] }}
           />
           {errors.message && touched.message && <div className="Form__validation">{errors.message}</div>}
-          <textarea
+          <motion.textarea
             style={errors.message && touched.message ? { border: '1px solid #e74c3c' } : {}}
             className="Form__input Form__textarea"
             name="message"
@@ -56,15 +58,19 @@ const ContactForm: React.SFC<ContactFormProps> = () => {
             onBlur={handleBlur}
             value={values.message}
             placeholder="Wiadomość"
+            animate={{ x: [100, 0], opacity: [0, 1] }}
+            transition={{ delay: 0.2 }}
           />
-          <button
+          <motion.button
             style={isValid && values.email && values.message ? { border: '1px solid #2ecc71' } : {}}
             disabled={isValid && isSubmitting}
             type="submit"
             className="Form__btn"
+            animate={{ x: [100, 0], opacity: [0, 1] }}
+            transition={{ delay: 0.4 }}
           >
             Wyślij
-          </button>
+          </motion.button>
         </Form>
       )}
     </Formik>
