@@ -48,6 +48,7 @@ const ContactForm: React.SFC<ContactFormProps> = () => {
             value={values.email}
             placeholder="Email"
             animate={{ x: [100, 0], opacity: [0, 1] }}
+            transition={{ delay: 0.4 }}
           />
           {errors.message && touched.message && <div className="Form__validation">{errors.message}</div>}
           <motion.textarea
@@ -67,7 +68,7 @@ const ContactForm: React.SFC<ContactFormProps> = () => {
             type="submit"
             className="Form__btn"
             animate={{ x: [100, 0], opacity: [0, 1] }}
-            transition={{ delay: 0.4 }}
+            transition={{ delay: 0 }}
           >
             Wyślij
           </motion.button>

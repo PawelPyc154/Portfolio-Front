@@ -25,8 +25,9 @@ const Contact: React.SFC<ContactProps> = () => (
         </CopyToClipboard>
       </motion.p>
       <motion.p className="Contact__paragraph" animate={{ y: [-100, 0], opacity: [0, 1] }} transition={{ delay: 0 }}>
-        {/* <MdEmail className="Contact__icon" /> */}
-        pawelpyc154@gmail.com
+        <a className="Contact__link" href="mailto: pawelpyc154@gmail.com?subject=your title&body=TThe message">
+          pawelpyc154@gmail.com
+        </a>
         <CopyToClipboard text="pawelpyc154@gmail.com">
           <FaCopy className="Contact__icon Contact__icon--copy" />
         </CopyToClipboard>
