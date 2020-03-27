@@ -1,0 +1,52 @@
+@import '../../variables';
+.Project {
+    background-color: #3498db;
+    width: 100%;
+    height: 200px;
+    margin: 10px 0;
+    overflow: hidden;
+    position: relative;
+    transform: translateX(-100%);
+    &__img {
+        width: 100%;
+        height: auto;
+    }
+    &__info {
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: #3498dbc2;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        @include tablet-small {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+        }
+    }
+    &__h2 {
+        font-size: 2em;
+        color: white;
+        z-index: 50;
+        margin: 0 auto;
+        @include tablet-small {
+            justify-self: center;
+            align-self: center;
+            order: -1;
+        }
+    }
+    &__icons {
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        @include tablet-small {
+            width: auto;
+        }
+    }
+    &__icon {
+        font-size: 4em;
+        color: white
+    }
+}

@@ -1,0 +1,17 @@
+@import '../../variables';
+.Projects {
+    padding: 5px;
+    margin: 5vh 0 0 0;
+    @include tablet-small {
+        margin: 10vh 0 0 0;
+    }
+    &__header {
+        background: -webkit-linear-gradient(180deg, #3498db, #2980b9);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 4em;
+    }
+    &__container {
+        margin: 20px 0;
+    }
+}
