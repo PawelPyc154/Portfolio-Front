@@ -18,5 +18,5 @@
     "project": "./tsconfig.json"
   },
   "plugins": ["react", "@typescript-eslint"],
-  "rules": { "react/prop-types": "off" }
+  "rules": { "react/prop-types": "off", "arrow-parens": "off" }
 }
