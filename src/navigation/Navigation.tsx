@@ -90,7 +90,7 @@ const Navigation: React.SFC<NavigationProps> = () => {
           <NavLink
             className="Navigation__link"
             activeClassName="Navigation__activeLink"
-            to="/project"
+            to="/projects"
             onClick={() => setOpen(false)}
           >
             Projekty
