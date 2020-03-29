@@ -4,9 +4,10 @@
     width: 100%;
     z-index: 1000;
     top: 0;
-    height: 10vh;
+    height: 0;
     @include desktop {
         background-color: $color-navigation;
+        height: 10vh;
     }
     &__list {
         background-color: $color-navigation;

@@ -1,7 +1,7 @@
 .sk-cube-grid {
     width: 100px;
     height: 100px;
-    margin: 100px auto;
+    margin: 300px auto;
 }
 
 .sk-cube-grid .sk-cube {
@@ -59,14 +59,12 @@
 }
 
 @-webkit-keyframes sk-cubeGridScaleDelay {
-
     0%,
     70%,
     100% {
         -webkit-transform: scale3D(1, 1, 1);
         transform: scale3D(1, 1, 1);
     }
-
     35% {
         -webkit-transform: scale3D(0, 0, 1);
         transform: scale3D(0, 0, 1);
@@ -74,14 +72,12 @@
 }
 
 @keyframes sk-cubeGridScaleDelay {
-
     0%,
     70%,
     100% {
         -webkit-transform: scale3D(1, 1, 1);
         transform: scale3D(1, 1, 1);
     }
-
     35% {
         -webkit-transform: scale3D(0, 0, 1);
         transform: scale3D(0, 0, 1);

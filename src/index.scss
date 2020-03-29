@@ -12,4 +12,9 @@
 body {
     background-color: $color-background;
     overflow-x: hidden;
+    overflow-wrap: anywhere;
+}
+
+a {
+    text-decoration: none;
 }

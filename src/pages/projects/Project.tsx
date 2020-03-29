@@ -1,26 +1,47 @@
+/* eslint-disable global-require */
+/* eslint-disable import/no-dynamic-require */
 import React from 'react';
 import { FiGithub } from 'react-icons/fi';
-import { FaCode } from 'react-icons/fa';
-import { MdZoomOutMap } from 'react-icons/md';
+
+import { MdZoomOutMap, MdZoomIn } from 'react-icons/md';
 import { motion } from 'framer-motion';
 
 import './Project.scss';
-
-const ID500x333px = require('./Layer_15.png');
+import { Link } from 'react-router-dom';
 
 export interface ProjectProps {
-  project: { name: string };
+  project: {
+    name: string;
+    param: string;
+    links: {
+      code: string;
+      demo?: string;
+    };
+    image: string;
+    technologies: string[];
+    description: string;
+  };
   index: number;
 }
 
 const Project: React.SFC<ProjectProps> = ({ project, index }) => (
-  <motion.article className="Project" animate={{ x: ['-100%', '0%'] }} transition={{ delay: index * 0.2 }}>
-    <img className="Project__img" src={ID500x333px} alt="" />
+  <motion.article className="Project" animate={{ x: ['-100%', '0%'] }} transition={{ delay: index * 0.1 }}>
+    <img className="Project__img" src={require(`./${project.image}.png`)} alt="" />
+
     <div className="Project__info">
       <div className="Project__icons">
-        <FiGithub className="Project__icon" />
-        <FaCode className="Project__icon" />
-        <MdZoomOutMap className="Project__icon" />
+        {project?.links?.demo && (
+          <a href={project.links.demo}>
+            <FiGithub className="Project__icon" />
+          </a>
+        )}
+        <a href={project.links.code}>
+          <MdZoomOutMap className="Project__icon" />
+        </a>
+        <Link to={`/projects/${project.param}`}>
+          <MdZoomIn className="Project__icon" />
+          {/* <MdZoomOutMap className="Project__icon" /> */}
+        </Link>
       </div>
       <h2 className="Project__h2">{project.name}</h2>
     </div>
