@@ -1,0 +1,77 @@
+[{
+        "name": "Portfolio",
+        "param": "portfolio",
+        "links": {
+            "code": "yy"
+        },
+        "image": "Layer_15",
+        "technologies": ["React", "html"],
+        "description": "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyymmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm"
+    },
+    {
+        "name": "Strona restauracji",
+        "param": "restaurant",
+        "links": {
+            "demo": "yy",
+            "code": "yy"
+        },
+        "image": "Layer_15",
+        "technologies": ["React", "html"],
+        "description": "yyy"
+    },
+    {
+        "name": "Logowanie i komentarze",
+        "param": "login",
+        "links": {
+            "demo": "yy",
+            "code": "yy"
+        },
+        "image": "Layer_15",
+        "technologies": ["React", "html"],
+        "description": "yyy"
+    },
+    {
+        "name": "Prosty layout",
+        "param": "layout",
+        "links": {
+            "demo": "yy",
+            "code": "yy"
+        },
+        "image": "Layer_15",
+        "technologies": ["React", "html"],
+        "description": "yyy"
+    },
+    {
+        "name": "Gra pamięciowa",
+        "param": "memory",
+        "links": {
+            "demo": "yy",
+            "code": "yy"
+        },
+        "image": "Layer_15",
+        "technologies": ["React", "html"],
+        "description": "yyy"
+    },
+    {
+        "name": "Kalkulator walut",
+        "param": "calculator",
+        "links": {
+            "demo": "yy",
+            "code": "yy"
+        },
+        "image": "Layer_15",
+        "technologies": ["React", "html"],
+        "description": "yyy"
+    },
+    {
+        "name": "G-code translator",
+        "param": "translator",
+        "links": {
+            "demo": "yy",
+            "code": "yy"
+        },
+        "image": "Layer_15",
+        "technologies": ["React", "html"],
+        "description": "yyy"
+    }
+]
