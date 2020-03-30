@@ -96,7 +96,7 @@ const Navigation: React.SFC<NavigationProps> = () => {
             Projekty
           </NavLink>
         </motion.li>
-        <motion.li
+        {/* <motion.li
           className="Navigation__item"
           variants={{
             closed: { x: '-200%', opacity: 0 },
@@ -112,7 +112,7 @@ const Navigation: React.SFC<NavigationProps> = () => {
           >
             Komentarze
           </NavLink>
-        </motion.li>
+        </motion.li> */}
         <motion.li
           className="Navigation__item"
           variants={{

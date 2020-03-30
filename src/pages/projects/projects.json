@@ -2,7 +2,7 @@
         "name": "Portfolio",
         "param": "portfolio",
         "links": {
-            "code": "yy"
+            "code": "https://github.com/PawelPyc154/Portfolio-Front"
         },
         "image": "Layer_15",
         "technologies": ["React", "html"],
@@ -12,21 +12,21 @@
         "name": "Strona restauracji",
         "param": "restaurant",
         "links": {
-            "demo": "yy",
-            "code": "yy"
+            "demo": "https://pawelpyc154.github.io/2019/",
+            "code": "https://github.com/PawelPyc154/2019"
         },
-        "image": "Layer_15",
+        "image": "restaurant",
         "technologies": ["React", "html"],
-        "description": "yyy"
+        "description": "yyyyyyyyyynmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm   "
     },
     {
         "name": "Logowanie i komentarze",
         "param": "login",
         "links": {
-            "demo": "yy",
-            "code": "yy"
+            "demo": "https://pawelpyc154.github.io/Project-6/",
+            "code": "https://github.com/PawelPyc154/Project-6"
         },
-        "image": "Layer_15",
+        "image": "login",
         "technologies": ["React", "html"],
         "description": "yyy"
     },
@@ -34,32 +34,33 @@
         "name": "Prosty layout",
         "param": "layout",
         "links": {
-            "demo": "yy",
-            "code": "yy"
+            "demo": "https://pawelpyc154.github.io/project-8/",
+            "code": "https://github.com/PawelPyc154/project-8"
         },
-        "image": "Layer_15",
+        "image": "layout",
         "technologies": ["React", "html"],
+
         "description": "yyy"
     },
     {
         "name": "Gra pamięciowa",
         "param": "memory",
         "links": {
-            "demo": "yy",
-            "code": "yy"
+            "demo": "https://pawelpyc154.github.io/Memory-Game",
+            "code": "https://github.com/PawelPyc154/Memory-Game"
         },
-        "image": "Layer_15",
+        "image": "memory",
         "technologies": ["React", "html"],
-        "description": "yyy"
+        "description": "memory"
     },
     {
         "name": "Kalkulator walut",
         "param": "calculator",
         "links": {
-            "demo": "yy",
-            "code": "yy"
+            "demo": "https://pawelpyc154.github.io/TypeScript-Redux-Example-project-5/",
+            "code": "https://github.com/PawelPyc154/TypeScript-Redux-Example-project-5"
         },
-        "image": "Layer_15",
+        "image": "calculator",
         "technologies": ["React", "html"],
         "description": "yyy"
     },
@@ -67,10 +68,10 @@
         "name": "G-code translator",
         "param": "translator",
         "links": {
-            "demo": "yy",
-            "code": "yy"
+            "demo": "https://pawelpyc154.github.io/G-code-translator-Project-2/",
+            "code": "https://github.com/PawelPyc154/G-code-translator-Project-2"
         },
-        "image": "Layer_15",
+        "image": "translator",
         "technologies": ["React", "html"],
         "description": "yyy"
     }

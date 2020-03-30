@@ -10,7 +10,7 @@
     @include desktop {
         margin: 20vh auto 2px;
         display: grid;
-        grid-template-columns: 1fr 2fr;
+        grid-template-columns: 2fr 3fr;
         // flex-direction: row;
         align-items: flex-start;
     }

@@ -7,9 +7,16 @@
     overflow: hidden;
     position: relative;
     transform: translateX(-100%);
-    &__img {
+    &__image {
         width: 100%;
         height: auto;
+        @include desktop {
+            justify-self: center;
+            align-self: center;
+            order: -1;
+            position: absolute;
+            top: -300px;
+        }
     }
     &__info {
         position: absolute;
@@ -47,6 +54,6 @@
     }
     &__icon {
         font-size: 4em;
-        color: white
+        color: white;
     }
 }

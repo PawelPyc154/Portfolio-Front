@@ -26,18 +26,18 @@ export interface ProjectProps {
 
 const Project: React.SFC<ProjectProps> = ({ project, index }) => (
   <motion.article className="Project" animate={{ x: ['-100%', '0%'] }} transition={{ delay: index * 0.1 }}>
-    <img className="Project__img" src={require(`./${project.image}.png`)} alt="" />
+    <img className="Project__image" src={require(`./image/${project.image}.png`)} alt="" />
 
     <div className="Project__info">
       <div className="Project__icons">
+        <a href={project.links.code}>
+          <FiGithub className="Project__icon" />
+        </a>
         {project?.links?.demo && (
           <a href={project.links.demo}>
-            <FiGithub className="Project__icon" />
+            <MdZoomOutMap className="Project__icon" />
           </a>
         )}
-        <a href={project.links.code}>
-          <MdZoomOutMap className="Project__icon" />
-        </a>
         <Link to={`/projects/${project.param}`}>
           <MdZoomIn className="Project__icon" />
           {/* <MdZoomOutMap className="Project__icon" /> */}

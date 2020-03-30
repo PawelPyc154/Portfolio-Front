@@ -21,14 +21,14 @@ const ProjectView: React.SFC<ProjectViewProps> = () => {
     <div className="ProjectView">
       <div className="ProjectView__imageContainer">
         <motion.div className="ProjectView__icons" animate={{ y: [-100, 0] }}>
+          <a href={projectData?.links.code} className="ProjectView__linkIcon">
+            <FiGithub className="ProjectView__icon" />
+          </a>
           {projectData?.links?.demo && (
             <a className="ProjectView__linkIcon" href={projectData.links.demo}>
-              <FiGithub className="ProjectView__icon" />
+              <MdZoomOutMap className="ProjectView__icon" />
             </a>
           )}
-          <a href="#" className="ProjectView__linkIcon">
-            <MdZoomOutMap className="ProjectView__icon" />
-          </a>
 
           <Link className="ProjectView__back" to="/projects">
             <MdKeyboardArrowLeft className="ProjectView__icon--back" />
@@ -36,7 +36,7 @@ const ProjectView: React.SFC<ProjectViewProps> = () => {
         </motion.div>
         <motion.img
           className="ProjectView__image"
-          src={require(`./${projectData?.image}.png`)}
+          src={require(`./image/${projectData?.image}.png`)}
           alt=""
           animate={{ scale: [0, 1] }}
         />
