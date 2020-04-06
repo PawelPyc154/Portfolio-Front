@@ -18,5 +18,10 @@
     "project": "./tsconfig.json"
   },
   "plugins": ["react", "@typescript-eslint"],
-  "rules": { "react/prop-types": "off", "arrow-parens": "off" }
+  "rules": {
+    "react/prop-types": "off",
+    "arrow-parens": "off",
+    "@typescript-eslint/indent": "off",
+    "object-curly-newline": "off"
+  }
 }
