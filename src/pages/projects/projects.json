@@ -1,78 +1,80 @@
-[{
-        "name": "Portfolio",
-        "param": "portfolio",
-        "links": {
-            "code": "https://github.com/PawelPyc154/Portfolio-Front"
-        },
-        "image": "Layer_15",
-        "technologies": ["React", "html"],
-        "description": "yyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyyymmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm"
+[
+  {
+    "name": "Wydarzenia w okolicy (mapbox)",
+    "param": "event-picker",
+    "links": {
+      "demo": "https://pawelpyc154.github.io/Party-picker/",
+      "code": "https://github.com/PawelPyc154/Party-picker"
     },
-    {
-        "name": "Strona restauracji",
-        "param": "restaurant",
-        "links": {
-            "demo": "https://pawelpyc154.github.io/2019/",
-            "code": "https://github.com/PawelPyc154/2019"
-        },
-        "image": "restaurant",
-        "technologies": ["React", "html"],
-        "description": "yyyyyyyyyynmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm   "
+    "image": "event-picker",
+    "technologies": ["React", "html"],
+    "description": "yyyyyyyyyynmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm   "
+  },
+  {
+    "name": "Strona restauracji",
+    "param": "restaurant",
+    "links": {
+      "demo": "https://pawelpyc154.github.io/2019/",
+      "code": "https://github.com/PawelPyc154/2019"
     },
-    {
-        "name": "Logowanie i komentarze",
-        "param": "login",
-        "links": {
-            "demo": "https://pawelpyc154.github.io/Project-6/",
-            "code": "https://github.com/PawelPyc154/Project-6"
-        },
-        "image": "login",
-        "technologies": ["React", "html"],
-        "description": "yyy"
+    "image": "restaurant",
+    "technologies": ["React", "html"],
+    "description": "yyyyyyyyyynmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmmm   "
+  },
+  {
+    "name": "Logowanie i komentarze",
+    "param": "login",
+    "links": {
+      "demo": "https://pawelpyc154.github.io/Project-6/",
+      "code": "https://github.com/PawelPyc154/Project-6"
     },
-    {
-        "name": "Prosty layout",
-        "param": "layout",
-        "links": {
-            "demo": "https://pawelpyc154.github.io/project-8/",
-            "code": "https://github.com/PawelPyc154/project-8"
-        },
-        "image": "layout",
-        "technologies": ["React", "html"],
+    "image": "login",
+    "technologies": ["React", "html"],
+    "description": "yyy"
+  },
+  {
+    "name": "Prosty layout",
+    "param": "layout",
+    "links": {
+      "demo": "https://pawelpyc154.github.io/project-8/",
+      "code": "https://github.com/PawelPyc154/project-8"
+    },
+    "image": "layout",
+    "technologies": ["React", "html"],
 
-        "description": "yyy"
+    "description": "yyy"
+  },
+  {
+    "name": "Gra pamięciowa",
+    "param": "memory",
+    "links": {
+      "demo": "https://pawelpyc154.github.io/Memory-Game",
+      "code": "https://github.com/PawelPyc154/Memory-Game"
     },
-    {
-        "name": "Gra pamięciowa",
-        "param": "memory",
-        "links": {
-            "demo": "https://pawelpyc154.github.io/Memory-Game",
-            "code": "https://github.com/PawelPyc154/Memory-Game"
-        },
-        "image": "memory",
-        "technologies": ["React", "html"],
-        "description": "memory"
+    "image": "memory",
+    "technologies": ["React", "html"],
+    "description": "memory"
+  },
+  {
+    "name": "Kalkulator walut",
+    "param": "calculator",
+    "links": {
+      "demo": "https://pawelpyc154.github.io/TypeScript-Redux-Example-project-5/",
+      "code": "https://github.com/PawelPyc154/TypeScript-Redux-Example-project-5"
     },
-    {
-        "name": "Kalkulator walut",
-        "param": "calculator",
-        "links": {
-            "demo": "https://pawelpyc154.github.io/TypeScript-Redux-Example-project-5/",
-            "code": "https://github.com/PawelPyc154/TypeScript-Redux-Example-project-5"
-        },
-        "image": "calculator",
-        "technologies": ["React", "html"],
-        "description": "yyy"
+    "image": "calculator",
+    "technologies": ["React", "html"],
+    "description": "yyy"
+  },
+  {
+    "name": "G-code translator",
+    "param": "translator",
+    "links": {
+      "demo": "https://pawelpyc154.github.io/G-code-translator-Project-2/",
+      "code": "https://github.com/PawelPyc154/G-code-translator-Project-2"
     },
-    {
-        "name": "G-code translator",
-        "param": "translator",
-        "links": {
-            "demo": "https://pawelpyc154.github.io/G-code-translator-Project-2/",
-            "code": "https://github.com/PawelPyc154/G-code-translator-Project-2"
-        },
-        "image": "translator",
-        "technologies": ["React", "html"],
-        "description": "yyy"
-    }
+    "image": "translator",
+    "technologies": ["React", "html"],
+    "description": "yyy"
+  }
 ]

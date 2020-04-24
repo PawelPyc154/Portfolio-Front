@@ -50,7 +50,12 @@ const Navigation: React.SFC<NavigationProps> = () => {
           }}
         >
           <Link className="Navigation__link " to="/" onClick={() => setOpen(false)}>
-            <svg xmlns="http://www.w3.org/2000/svg" width="240.088" height="29.253" viewBox="0 0 240.088 29.253">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="240.088"
+              height="29.253"
+              viewBox="0 0 240.088 29.253"
+            >
               <path
                 id="Path_1"
                 data-name="Path 1"
@@ -61,7 +66,7 @@ const Navigation: React.SFC<NavigationProps> = () => {
             </svg>
           </Link>
         </motion.li>
-        <motion.li
+        {/* <motion.li
           className="Navigation__item"
           variants={{
             closed: { x: '-200%', opacity: 0 },
@@ -78,7 +83,7 @@ const Navigation: React.SFC<NavigationProps> = () => {
           >
             O mnie
           </NavLink>
-        </motion.li>
+        </motion.li> */}
         <motion.li
           className="Navigation__item"
           variants={{
@@ -90,29 +95,13 @@ const Navigation: React.SFC<NavigationProps> = () => {
           <NavLink
             className="Navigation__link"
             activeClassName="Navigation__activeLink"
-            to="/projects"
+            to="/"
+            exact
             onClick={() => setOpen(false)}
           >
             Projekty
           </NavLink>
         </motion.li>
-        {/* <motion.li
-          className="Navigation__item"
-          variants={{
-            closed: { x: '-200%', opacity: 0 },
-            open: { x: 0, opacity: 1, transition: { delay: 0.4 } },
-            desktop: { x: [-100, 0], opacity: [0, 1], transition: { delay: 0.1 } },
-          }}
-        >
-          <NavLink
-            className="Navigation__link"
-            to="/comments"
-            activeClassName="Navigation__activeLink"
-            onClick={() => setOpen(false)}
-          >
-            Komentarze
-          </NavLink>
-        </motion.li> */}
         <motion.li
           className="Navigation__item"
           variants={{

@@ -3,11 +3,11 @@
 import React from 'react';
 import { FiGithub } from 'react-icons/fi';
 
-import { MdZoomOutMap, MdZoomIn } from 'react-icons/md';
+import { MdZoomOutMap } from 'react-icons/md'; // , MdZoomIn
 import { motion } from 'framer-motion';
 
 import './Project.scss';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 export interface ProjectProps {
   project: {
@@ -25,7 +25,11 @@ export interface ProjectProps {
 }
 
 const Project: React.SFC<ProjectProps> = ({ project, index }) => (
-  <motion.article className="Project" animate={{ x: ['-100%', '0%'] }} transition={{ delay: index * 0.1 }}>
+  <motion.article
+    className="Project"
+    animate={{ x: ['-100%', '0%'] }}
+    transition={{ delay: index * 0.1 }}
+  >
     <img className="Project__image" src={require(`./image/${project.image}.png`)} alt="" />
 
     <div className="Project__info">
@@ -38,10 +42,10 @@ const Project: React.SFC<ProjectProps> = ({ project, index }) => (
             <MdZoomOutMap className="Project__icon" />
           </a>
         )}
-        <Link to={`/projects/${project.param}`}>
+        {/* <Link to={`/projects/${project.param}`}>
           <MdZoomIn className="Project__icon" />
-          {/* <MdZoomOutMap className="Project__icon" /> */}
-        </Link>
+          <MdZoomOutMap className="Project__icon" />
+        </Link> */}
       </div>
       <h2 className="Project__h2">{project.name}</h2>
     </div>
