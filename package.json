@@ -18,7 +18,7 @@
         "axios": "^0.19.2",
         "formik": "^2.1.4",
         "framer-motion": "^1.10.2",
-        "node-sass": "^4.13.1",
+        "node-sass": "^7.0.0",
         "react": "^16.13.1",
         "react-copy-to-clipboard": "^5.0.2",
         "react-dom": "^16.13.1",
